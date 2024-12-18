@@ -33,8 +33,6 @@ jobs:
 
       - name: Desplegar en GitHub Pages
         run: |
-         git config --global user.email "kevin-maldonado19@outlook.com"
-         git config --global user.name "Kevin Maldonado Delgado"
          npx angular-cli-ghpages --dir=dist/mi-portafolio/browser --no-silent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
