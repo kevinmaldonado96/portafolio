@@ -38,6 +38,6 @@ jobs:
 
       - name: Desplegar en GitHub Pages
         run: |
-         npx angular-cli-ghpages --dir=dist/portafolio --no-silent
+         npx angular-cli-ghpages --dir=dist/portafolio/browser --no-silent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
