@@ -1,0 +1,30 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Construir aplicación Angular
+        run: ng build --base-href /portafolio/
+
+      - name: Desplegar en GitHub Pages
+        run: npx angular-cli-ghpages --dir=dist/mi-portafolio
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
