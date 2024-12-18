@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Construir aplicación Angular
-        run: ng build --configuration production --base-href /mi-portafolio/
+        run: ng build --configuration production --base-href /mi-portafolio/browser/
 
       - name: Desplegar en GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/mi-portafolio
