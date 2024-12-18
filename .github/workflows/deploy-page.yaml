@@ -21,6 +21,12 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
+      - name: Instalar Angular CLI
+        run: npm install -g @angular/cli
+
+      - name: Instalar dependencias
+        run: npm install
+
       - name: Construir aplicación Angular
         run: ng build --base-href /portafolio/
 
