@@ -1,0 +1,49 @@
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        text-align:center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 100vh
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%
+    }
+
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto
+    }
+
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: 100% auto 0;
+        padding: .5rem;
+    }
+
+    #sideNav .navbar-nav .nav-item .nav-link {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 27px;
+    }
+
+    #sideNav .navbar-brand .img-profile {
+        max-width: 18rem;
+        max-height: 18rem;
+        border: .5rem solid rgba(255,255,255,.2);
+    }
+}
