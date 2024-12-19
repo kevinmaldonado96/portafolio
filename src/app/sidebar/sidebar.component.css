@@ -4,6 +4,10 @@
     font-size: 15px;
 }
 
+#sideNav {
+    background: #396CF7;
+}
+
 @media (min-width: 992px) {
     #sideNav {
         text-align:center;
