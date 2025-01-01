@@ -11,6 +11,11 @@
     max-width: 40%;
 }
 
+.education-title {
+    margin-left: 12px;
+    margin-top: 6px;
+}
+
 @media (max-width: 767px) {
     .timeline {
         max-width: 98%;
