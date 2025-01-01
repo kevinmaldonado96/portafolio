@@ -16,10 +16,18 @@
     margin-top: 6px;
 }
 
+.margin-title {
+    margin-top: 5%;
+}
+
 @media (max-width: 767px) {
     .timeline {
         max-width: 98%;
         padding: 25px;
+    }
+
+    .margin-title {
+        margin-top: 20%;
     }
 }
 
