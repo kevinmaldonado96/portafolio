@@ -4,13 +4,16 @@ import { NgModule } from '@angular/core';
 import { ResumeComponent } from './resume/resume.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
     { path: '', redirectTo:'/about', pathMatch: 'full' },
     { path: 'about', component: AboutComponent },
     { path: 'education', component: ResumeComponent },
     { path: 'experience', component: ExperienceComponent },
-    { path: 'skills', component: SkillsComponent }
+    { path: 'skills', component: SkillsComponent },
+    { path: 'contact', component: ContactComponent }
+
 ];
 
 @NgModule({
