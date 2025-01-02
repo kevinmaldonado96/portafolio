@@ -5,6 +5,10 @@ h1,h2,h3,h4,h5,h6 {
     color: #343a40
 }
 
+.main-title {
+    margin-top: 18%   
+}
+
 h1 {
     font-size: 5rem;
     line-height: 5.5rem;
@@ -23,11 +27,17 @@ a {
     text-decoration: none;
 }
 
-
 a:hover i {
     color: #396CF7;
 }
 
 a:hover {
     color: #2c98f0;
+}
+
+@media (max-width: 767px) {
+
+    .main-title {
+        margin-top: 25%;
+    }
 }
