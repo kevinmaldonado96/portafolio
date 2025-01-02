@@ -5,6 +5,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
+import { PortafolioComponent } from './portafolio/portafolio.component';
 
 export const routes: Routes = [
     { path: '', redirectTo:'/about', pathMatch: 'full' },
@@ -12,8 +13,8 @@ export const routes: Routes = [
     { path: 'education', component: ResumeComponent },
     { path: 'experience', component: ExperienceComponent },
     { path: 'skills', component: SkillsComponent },
-    { path: 'contact', component: ContactComponent }
-
+    { path: 'contact', component: ContactComponent },
+    { path: 'portafolio', component: PortafolioComponent }
 ];
 
 @NgModule({
