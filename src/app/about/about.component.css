@@ -13,3 +13,21 @@ h1 {
 p {
     text-align: justify;
 }
+
+i {
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:hover i {
+    color: #396CF7;
+}
+
+a:hover {
+    color: #2c98f0;
+}

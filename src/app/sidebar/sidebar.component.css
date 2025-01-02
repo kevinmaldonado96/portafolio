@@ -8,6 +8,13 @@
     background: #396CF7;
 }
 
+
+.img-profile-small {
+    max-width: 20rem;
+    max-height: 23rem;
+    border: .5rem solid rgba(255,255,255,.2);
+}
+
 @media (min-width: 992px) {
     #sideNav {
         text-align:center;
@@ -16,7 +23,7 @@
         left: 0;
         display: flex;
         flex-direction: column;
-        width: 20rem;
+        width: 23rem;
         height: 100vh
     }
 
@@ -35,7 +42,7 @@
 
     #sideNav .navbar-brand {
         display: flex;
-        margin: 45% auto 0;
+        margin: 10% auto 0;
         padding: .5rem;
     }
 
@@ -46,8 +53,9 @@
     }
 
     #sideNav .navbar-brand .img-profile {
-        max-width: 12rem;
-        max-height: 12rem;
+        max-width: 20rem;
+        max-height: 23rem;
         border: .5rem solid rgba(255,255,255,.2);
     }
+    
 }

@@ -42,8 +42,21 @@ p {
     color: #396CF7;
   }
 
+  .margin-title{
+    margin-top: 3%;
+    margin-left: 1%;
+  }
+
+  .justify{
+    text-align: justify;
+  }
+
   @media (max-width: 767px) {
     .icons {
         padding: 5px;
+    }
+
+    .margin-title{
+      margin-top: 20%;
     }
   }
