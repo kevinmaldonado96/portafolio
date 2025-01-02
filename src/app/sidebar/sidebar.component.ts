@@ -12,4 +12,11 @@ import { RouterModule } from '@angular/router';
 })
 export class SidebarComponent {
 
+  closeNavbar() {
+    const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    }
+  }
+
 }
