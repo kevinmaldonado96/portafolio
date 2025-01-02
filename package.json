@@ -23,6 +23,7 @@
     "bootstrap-icons": "^1.11.3",
     "devicon": "^2.16.0",
     "express-engine": "^1.0.1",
+    "flag-icons": "^7.2.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
