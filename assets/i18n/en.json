@@ -1,0 +1,21 @@
+{
+  "ABOUT": "ABOUT",
+  "EDUCATION": "EDUCATION",
+  "EXPERIENCE": "EXPERIENCE",
+  "SKILLS": "SKILLS",
+  "PORTFOLIO": "PORTFOLIO",
+  "CONTACT": "CONTACT",
+  "LANGUAGE": "LANGUAGE",
+  "SPANISH": "SPANISH",
+  "ENGLISH": "ENGLISH",
+  "ABOUT_PARAGRAPH_1": "Systems Engineer graduated from the Universidad Piloto de Colombia and Master of Software Engineering from the Universidad de los Andes. I have extensive experience in software development using technologies such as Java SE/EE, Spring Boot, Hibernate, Maven, Microservices, and frameworks like Flask in Python. I work with relational databases such as MySQL and have solid knowledge in JavaScript, web development, and cloud tools like Google Cloud Platform.",
+  "ABOUT_PARAGRAPH_2": "I excel in software project management, problem analysis (algorithms), and my commitment to innovation and continuous learning. I am a responsible, results-oriented professional with excellent interpersonal skills and a passion for teamwork.",
+  "SYSTEMS_ENGINEERING": "Systems Engineering",
+  "ENGLISH_LEVEL_B2_1": "English Level B2.1",
+  "MASTER_IN_SOFTWARE_ENGINEERING": "Master's in Software Engineering",
+  "ONLINE_COURSES": "Online Courses",
+  "JAVA_ENTERPRISE_EDITION": "Java Enterprise Edition",
+  "ANGULAR_FROM_ZERO_TO_EXPERT": "Angular: From Zero to Expert",
+  "SPRING_FRAMEWORK_CREATING_WEBAPPS_FROM_ZERO_TO_EXPERT": "Spring Framework: Creating WebApps From Zero to Expert",
+  "NODE_FROM_ZERO_TO_EXPERT": "Node: From Zero to Expert"
+}
