@@ -1,94 +1,164 @@
 <div class="container-fluid">
-    <div class="row margin-title">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h1 class="mb-0">Portafolio</h1>
+  <div class="row">
+    <app-languaje></app-languaje>
+  </div>
+  <div class="row margin-title">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h1 class="mb-0">Portafolio</h1>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2%">
+    <div
+      class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card"
+    >
+      <div class="card position-relative" style="width: 18rem">
+        <img
+          src="assets/images/imagen-portafolio-flight-offers-management.png"
+          class="card-img-top img-portafolio"
+          alt="flight-offers-management"
+        />
+        <div
+          class="overlay d-flex justify-content-center align-items-center"
+          (click)="
+            redirectToUrl(
+              'https://github.com/kevinmaldonado96/flight-offers-management'
+            )
+          "
+        >
+          <i class="bi bi-eye-fill fs-1" style="color: white"></i>
         </div>
+        <div class="card-body">
+          <h5 class="card-title">Gestor de Ofertas de Vuelo</h5>
+          <p class="card-text justify">
+            Plataforma backend diseñada para centralizar, administrar y
+            optimizar la gestión de promociones y ofertas de vuelos, facilitando
+            a los usuarios encontrar las mejores opciones de viaje de manera
+            rápida y eficiente.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card"
+    >
+      <div class="card position-relative" style="width: 18rem">
+        <img
+          src="assets/images/imagen-portafolio-async-file-processor.png"
+          class="card-img-top img-portafolio"
+          alt="flight-offers-management"
+        />
+        <div
+          class="overlay d-flex justify-content-center align-items-center"
+          (click)="
+            redirectToUrl(
+              'https://github.com/kevinmaldonado96/async-file-processor'
+            )
+          "
+        >
+          <i class="bi bi-eye-fill fs-1" style="color: white"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Procesador de Archivos Asíncrono</h5>
+          <p class="card-text justify">
+            Aplicación desarrollada en Python que utiliza comunicación
+            asincrónica para procesar grandes volúmenes de archivos de manera
+            eficiente. Está implementada en la nube, asegurando escalabilidad y
+            alto rendimiento.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card"
+    >
+      <div class="card position-relative" style="width: 18rem">
+        <img
+          src="assets/images/imagen-portafolio-cinepedia.png"
+          class="card-img-top img-portafolio"
+          alt="flight-offers-management"
+        />
+        <div
+          class="overlay d-flex justify-content-center align-items-center"
+          (click)="
+            redirectToUrl('https://github.com/kevinmaldonado96/CINEPEDIA')
+          "
+        >
+          <i class="bi bi-eye-fill fs-1" style="color: white"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cinepedia</h5>
+          <p class="card-text justify">
+            Aplicación desarrollada en Angular que permite a los usuarios
+            explorar y buscar información organizada en categorías. Ofrece una
+            interfaz intuitiva y dinámica para acceder a contenido enriquecido
+            de manera rápida y eficiente.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="row" style="margin-top: 2%">
-        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card">
-            <div class="card position-relative" style="width: 18rem;">
-                <img src="assets/images/imagen-portafolio-flight-offers-management.png" 
-                     class="card-img-top img-portafolio" 
-                     alt="flight-offers-management">
-                <div class="overlay d-flex justify-content-center align-items-center" (click)="redirectToUrl('https://github.com/kevinmaldonado96/flight-offers-management')">
-                    <i class="bi bi-eye-fill fs-1" style="color: white"></i>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Gestor de Ofertas de Vuelo</h5>
-                  <p class="card-text justify">
-                    Plataforma backend diseñada para centralizar, administrar y optimizar la gestión de promociones y ofertas de vuelos, facilitando a los usuarios encontrar las mejores opciones de viaje de manera rápida y eficiente.
-                  </p>
-                </div>
-              </div>
+      <div
+        class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card"
+      >
+        <div class="card position-relative" style="width: 18rem">
+          <img
+            src="assets/images/imagen-portafolio-MISO-proyecto-back.png"
+            class="card-img-top img-portafolio"
+            alt="flight-offers-management"
+          />
+          <div
+            class="overlay d-flex justify-content-center align-items-center"
+            (click)="
+              redirectToUrl('https://github.com/kevinmaldonado96/MISO-Proyecto')
+            "
+          >
+            <i class="bi bi-eye-fill fs-1" style="color: white"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Abcall (Web)</h5>
+            <p class="card-text justify">
+              Aplicación desarrollada en Angular con Angular Material que
+              automatiza la gestión de peticiones, quejas, reclamos y
+              sugerencias utilizando inteligencia artificial. La IA prioriza y
+              categoriza solicitudes, mientras que un sistema de tickets permite
+              su seguimiento eficiente y la mejora del tiempo de respuesta
+            </p>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card">
-            <div class="card position-relative" style="width: 18rem;">
-                <img src="assets/images/imagen-portafolio-async-file-processor.png" 
-                     class="card-img-top img-portafolio" 
-                     alt="flight-offers-management">
-                <div class="overlay d-flex justify-content-center align-items-center" (click)="redirectToUrl('https://github.com/kevinmaldonado96/async-file-processor')">
-                    <i class="bi bi-eye-fill fs-1" style="color: white"></i>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Procesador de Archivos Asíncrono</h5>
-                  <p class="card-text justify">Aplicación desarrollada en Python que utiliza comunicación asincrónica para procesar grandes volúmenes de archivos de manera eficiente. Está implementada en la nube, asegurando escalabilidad y alto rendimiento.
-                  </p>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card">
-            <div class="card position-relative" style="width: 18rem;">
-                <img src="assets/images/imagen-portafolio-cinepedia.png" 
-                     class="card-img-top img-portafolio" 
-                     alt="flight-offers-management">
-                <div class="overlay d-flex justify-content-center align-items-center" (click)="redirectToUrl('https://github.com/kevinmaldonado96/CINEPEDIA')">
-                     <i class="bi bi-eye-fill fs-1" style="color: white"></i>
-                </div>
-                <div class="card-body">
-                 <h5 class="card-title">Cinepedia</h5>
-                  <p class="card-text">
-                    Aplicación desarrollada en Angular que permite a los usuarios explorar y buscar información organizada en categorías. Ofrece una interfaz intuitiva y dinámica para acceder a contenido enriquecido de manera rápida y eficiente.
-                  </p>
-                </div>
-              </div>
-        </div>
-        <div class="row" style="margin-top: 2%">
-            <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card">
-                <div class="card position-relative" style="width: 18rem;">
-                    <img src="assets/images/imagen-portafolio-MISO-proyecto-back.png" 
-                         class="card-img-top img-portafolio" 
-                         alt="flight-offers-management">
-                    <div class="overlay d-flex justify-content-center align-items-center" (click)="redirectToUrl('https://github.com/kevinmaldonado96/MISO-Proyecto')">
-                       <i class="bi bi-eye-fill fs-1" style="color: white"></i>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Abcall (Web)</h5>
-                      <p class="card-text justify">
-                        Aplicación desarrollada en Angular con Angular Material que automatiza la gestión de peticiones, quejas, reclamos y sugerencias utilizando inteligencia artificial. La IA prioriza y categoriza solicitudes, mientras que un sistema de tickets permite su seguimiento eficiente y la mejora del tiempo de respuesta                     
-                     </p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card">
-                <div class="card position-relative" style="width: 18rem;">
-                    <img src="assets/images/imagen-portafilio-MISO-proyecto-web.png" 
-                         class="card-img-top img-portafolio" 
-                         alt="flight-offers-management">
-                    <div class="overlay d-flex justify-content-center align-items-center" (click)="redirectToUrl('https://github.com/kevinmaldonado96/MISO-Proyecto-Web')">
-                        <i class="bi bi-eye-fill fs-1" style="color: white"></i>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Abcall (Backend)</h5>
+      </div>
+      <div
+        class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card"
+      >
+        <div class="card position-relative" style="width: 18rem">
+          <img
+            src="assets/images/imagen-portafilio-MISO-proyecto-web.png"
+            class="card-img-top img-portafolio"
+            alt="flight-offers-management"
+          />
+          <div
+            class="overlay d-flex justify-content-center align-items-center"
+            (click)="
+              redirectToUrl(
+                'https://github.com/kevinmaldonado96/MISO-Proyecto-Web'
+              )
+            "
+          >
+            <i class="bi bi-eye-fill fs-1" style="color: white"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Abcall (Backend)</h5>
 
-                      <p class="card-text">
-                        Aplicación desarrollada en Python, Flask, bajo una arquitectura de microservicios, la cual automatiza la gestión de peticiones, quejas, reclamos y sugerencias utilizando inteligencia artificial. La IA prioriza y categoriza solicitudes, mientras que un sistema de tickets permite su seguimiento eficiente y la mejora del tiempo de respuesta                      
-                      </p>
-                    </div>
-                  </div>
-            </div>
+            <p class="card-text justify">
+              Aplicación desarrollada en Python, Flask, bajo una arquitectura de
+              microservicios, la cual automatiza la gestión de peticiones,
+              quejas, reclamos y sugerencias utilizando inteligencia artificial.
+              La IA prioriza y categoriza solicitudes, mientras que un sistema
+              de tickets permite su seguimiento eficiente y la mejora del tiempo
+              de respuesta
+            </p>
+          </div>
         </div>
-
-         
+      </div>
     </div>
+  </div>
 </div>
-

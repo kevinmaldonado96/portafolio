@@ -1,0 +1,10 @@
+.dropdown-style {
+    color: black !important;
+    background: white !important;
+    border: none;
+}
+
+.text-font {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+}

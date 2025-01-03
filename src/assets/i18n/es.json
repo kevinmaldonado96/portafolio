@@ -1,0 +1,22 @@
+{
+    "ABOUT": "ACERCA DE",
+    "EDUCATION": "EDUCACIÓN",
+    "EXPERIENCE": "EXPERIENCIA",
+    "SKILLS": "HABILIDADES",
+    "PORTFOLIO": "PORTAFOLIO",
+    "CONTACT": "CONTACTO",
+    "LANGUAGE": "IDIOMA",
+    "SPANISH": "ESPAÑOL",
+    "ENGLISH": "INGLES",
+    "ABOUT_PARAGRAPH_1": "Ingeniero de Sistemas egresado de la Universidad Piloto de Colombia y Magíster en Ingeniería de Software por la Universidad de los Andes. Cuento con amplia experiencia en desarrollo de software utilizando tecnologías como Java SE/EE, Spring Boot, Hibernate, Maven, Microservicios, y frameworks como Flask en Python. Manejo bases de datos relacionales como MySQL y poseo conocimientos sólidos en JavaScript, desarrollo web y herramientas de nube como Google Cloud Platform.",
+    "ABOUT_PARAGRAPH_2": "Me destaco por mis habilidades en gestión de proyectos de software, análisis de problemas (algoritmia), y por mi compromiso con la innovación y el aprendizaje continuo. Soy un profesional responsable, orientado a resultados, con excelentes relaciones interpersonales y pasión por el trabajo en equipo.",
+    "SYSTEMS_ENGINEERING": "Ingeniería de Sistemas",
+    "ENGLISH_LEVEL_B2_1": "Nivel B2.1 en inglés",
+    "MASTER_IN_SOFTWARE_ENGINEERING": "Maestría en Ingeniería de Software",
+    "ONLINE_COURSES": "Cursos en línea",
+    "JAVA_ENTERPRISE_EDITION": "Java Enterprise Edition",
+    "ANGULAR_FROM_ZERO_TO_EXPERT": "Angular de cero a experto",
+    "SPRING_FRAMEWORK_CREATING_WEBAPPS_FROM_ZERO_TO_EXPERT": "Spring Framework: creando webapp de cero a experto",
+    "NODE_FROM_ZERO_TO_EXPERT": "Node: De cero a experto"
+  }
+  

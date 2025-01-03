@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main-title {
-    margin-top: 15%
+    margin-top: 10%
 }
 
 h1 {
@@ -40,6 +40,6 @@ a:hover {
 @media (max-width: 767px) {
 
     .main-title {
-        margin-top: 25%;
+        margin-top: 10%;
     }
 }

@@ -19,22 +19,38 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/about']" (click)="closeNavbar()" routerLinkActive="active">Acerca de</a>
+            <a class="nav-link" [routerLink]="['/about']" (click)="closeNavbar()" routerLinkActive="active">{{ 'ABOUT' | translate }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/education']" (click)="closeNavbar()" routerLinkActive="active">Educacion</a>
+            <a class="nav-link" [routerLink]="['/education']" (click)="closeNavbar()" routerLinkActive="active">{{ 'EDUCATION' | translate }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/experience']" (click)="closeNavbar()" routerLinkActive="active">Experiencia</a>
+            <a class="nav-link" [routerLink]="['/experience']" (click)="closeNavbar()" routerLinkActive="active">{{ 'EXPERIENCE' | translate }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/skills']" (click)="closeNavbar()" routerLinkActive="active">Habilidades</a>
+            <a class="nav-link" [routerLink]="['/skills']" (click)="closeNavbar()" routerLinkActive="active">{{ 'SKILLS' | translate }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/portafolio']" (click)="closeNavbar()">Portafolio</a>
+            <a class="nav-link" [routerLink]="['/portafolio']" (click)="closeNavbar()">{{ 'PORTFOLIO' | translate }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/contact']" (click)="closeNavbar()" routerLinkActive="active">Contacto</a>
+            <a class="nav-link" [routerLink]="['/contact']" (click)="closeNavbar()" routerLinkActive="active">{{ 'CONTACT' | translate }}</a>
+          </li>
+          <li class="nav-item dropdown d-lg-none"
+          (shown.bs.dropdown)="onMobileDropdownShown()"
+          (hidden.bs.dropdown)="onMobileDropdownHidden()">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <ng-container *ngIf="!opened; else otherLanguage">
+                {{ selectedLanguage | language}} <span [class]="selectedFlag" style="margin-left: 2%"></span>
+              </ng-container>
+              <ng-template #otherLanguage>
+                {{ 'LANGUAGE' | translate }}
+              </ng-template>
+            </a>
+            <ul class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav-link" (click)="changeLanguage('es', 'fi fi-co')">{{ 'SPANISH' | translate }}<span class="fi fi-co" style="margin-left: 2%"></span></a></li>
+              <li><a class="dropdown-item nav-link" (click)="changeLanguage('en', 'fi fi-gb')">{{ 'ENGLISH' | translate }}<span class="fi fi-gb" style="margin-left: 2%"></span></a></li>
+            </ul>
           </li>
         </ul>
       </div>

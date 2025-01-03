@@ -43,12 +43,16 @@ p {
   }
 
   .margin-title{
-    margin-top: 3%;
-    margin-left: 1%;
+    margin-top: 1%;
   }
 
   .justify{
     text-align: justify;
+  }
+
+  .text-font {
+      font-family: "Playfair Display", serif;
+      font-size: 17px;
   }
 
   @media (max-width: 767px) {
@@ -57,6 +61,6 @@ p {
     }
 
     .margin-title{
-      margin-top: 25%;
+      margin-top: 10%;
     }
   }

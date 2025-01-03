@@ -20,6 +20,11 @@
     font-weight: bold;
   }
 
+.dropdown-style {
+    background-color: transparent;
+    border: none;
+}
+
 @media (min-width: 992px) {
     #sideNav {
         text-align:center;

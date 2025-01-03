@@ -1,3 +1,10 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Saira Extra Condensed',serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40
+}
+
 .timeline {
     margin-left: 2%;
     border-left: 3px solid #727cf5;
@@ -16,18 +23,7 @@
 }
 
 .margin-title {
-    margin-top: 3%;
-}
-
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
-
-    .margin-title {
-        margin-top: 25%;
-    }
+    margin-top: 1%;
 }
 
 .timeline h1 {
@@ -47,12 +43,6 @@
     padding-bottom: 25px;
     margin-bottom: 25px;
     position: relative;
-}
-
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
 }
 
 .timeline .event:last-of-type {
@@ -77,13 +67,6 @@
     min-width: 120px;
 }
 
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
-
 .timeline .event:after {
     -webkit-box-shadow: 0 0 0 3px #727cf5;
     box-shadow: 0 0 0 3px #727cf5;
@@ -94,12 +77,6 @@
     width: 9px;
     content: "";
     top: 5px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
 }
 
 .rtl .timeline {
@@ -120,4 +97,28 @@
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+
+    .timeline .event {
+        padding-top: 30px;
+    }
+
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+
+    .margin-title {
+        margin-top: 10%;
+    }
 }

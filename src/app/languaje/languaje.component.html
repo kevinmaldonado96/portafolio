@@ -1,0 +1,21 @@
+<div class="dropdown" style="text-align: right; padding-top: 2%">
+    <button 
+        class="btn btn-secondary dropdown-style dropdown-toggle text-font" 
+        type="button" 
+        id="dropdownMenuButton1" 
+        data-bs-toggle="dropdown"
+         aria-expanded="false"
+         (shown.bs.dropdown)="onDropdownShown()"
+         (hidden.bs.dropdown)="onDropdownHidden()">
+        <ng-container *ngIf="!showed; else otherLanguage">
+            {{ selectedLanguage | language }} <span [class]="selectedFlag" style="margin-left: 5%"></span>
+          </ng-container>
+          <ng-template #otherLanguage>
+            Idioma
+          </ng-template>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li class="text-font"><a class="dropdown-item" (click)="changeLanguage('es', 'fi fi-co')">Español<span class="fi fi-co" style="margin-left: 2%"></span></a></li>
+      <li class="text-font"><a class="dropdown-item" (click)="changeLanguage('en', 'fi fi-gb')">Ingles<span class="fi fi-gb" style="margin-left: 2%"></span></a></li>
+    </ul>
+  </div>
