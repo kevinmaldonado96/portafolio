@@ -68,8 +68,10 @@ export class SidebarComponent {
     const flag = this.storageService.getItem("flag")
 
     lang ??= navigator.language.split('-')[0];
-    
+    this.selectedLanguage = lang ?? 'en'
+
     this.selectedFlag = flag ?? (this.flags.get(this.selectedLanguage) ?? 'fi fi-gb')
+
   
     if (!this.translate.getLangs().includes(this.selectedLanguage)){
       this.selectedLanguage = 'en'
