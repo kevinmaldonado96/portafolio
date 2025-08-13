@@ -15,7 +15,7 @@
           </ng-template>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li class="text-font"><a class="dropdown-item" (click)="changeLanguage('es', 'fi fi-co')">Español<span class="fi fi-co" style="margin-left: 2%"></span></a></li>
-      <li class="text-font"><a class="dropdown-item" (click)="changeLanguage('en', 'fi fi-gb')">Ingles<span class="fi fi-gb" style="margin-left: 2%"></span></a></li>
+      <li class="text-font"><a class="dropdown-item" (click)="changeLanguage('es', 'fi fi-co')">{{ 'SPANISH_MIN' | translate }}<span class="fi fi-co" style="margin-left: 2%"></span></a></li>
+      <li class="text-font"><a class="dropdown-item" (click)="changeLanguage('en', 'fi fi-gb')">{{ 'ENGLISH_MIN' | translate }}<span class="fi fi-gb" style="margin-left: 2%"></span></a></li>
     </ul>
   </div>
