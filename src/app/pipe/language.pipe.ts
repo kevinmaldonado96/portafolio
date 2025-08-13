@@ -24,7 +24,8 @@ export class LanguagePipe implements PipeTransform {
 
   transform(value: any): string {
 
-    this.lang = (this.storageService.getItem("language")) ? this.storageService.getItem("language") : 'es'
+    this.lang = (this.storageService.getItem("language")) ? this.storageService.getItem("language") : navigator.language.split('-')[0]
+
     console.log(this.lang)
 
     console.log(value)
