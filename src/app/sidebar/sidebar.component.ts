@@ -23,8 +23,16 @@ export class SidebarComponent {
   selectedFlag!: string
   opened!: boolean
 
+  flags = new Map<string, string>([
+    ['en', 'fi fi-gb'],
+    ['es', 'fi fi-co']
+  ]);
+
+
   constructor(private storageService: StorageService, 
     private translate: TranslateService){
+      translate.addLangs(['en', 'es']);
+
   }
 
   ngOnInit(){
@@ -56,17 +64,20 @@ export class SidebarComponent {
 
     this.opened = false
 
-    const lang = this.storageService.getItem("language")
+    let lang = this.storageService.getItem("language")
     const flag = this.storageService.getItem("flag")
 
-    this.selectedLanguage = lang ?? 'es'
-    this.selectedFlag = flag ?? 'fi fi-co'
-
+    lang ??= navigator.language.split('-')[0];
+    
+    this.selectedFlag = flag ?? (this.flags.get(this.selectedLanguage) ?? 'fi fi-gb')
+  
+    if (!this.translate.getLangs().includes(this.selectedLanguage)){
+      this.selectedLanguage = 'en'
+    } 
     this.translate.use(this.selectedLanguage)
   }
 
   changeLanguage(lang: string, flag: string) {
-    console.log(lang)
     this.translate.use(lang);
     this.storageService.setItem("language", lang)
     this.storageService.setItem("flag", flag)
