@@ -70,7 +70,10 @@ export class LanguajeComponent {
 
       this.selectedFlag = flag ?? (this.flags.get(this.selectedLanguage) ?? 'fi fi-gb')
   
-      this.translate.use(this.translate.getLangs().includes(this.selectedLanguage) ? this.selectedLanguage : 'en');
+      if (!this.translate.getLangs().includes(this.selectedLanguage)){
+        this.selectedLanguage = 'en'
+      } 
+      this.translate.use(this.selectedLanguage)
     
     }
 
