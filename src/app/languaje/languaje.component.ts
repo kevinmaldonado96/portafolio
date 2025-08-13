@@ -22,6 +22,10 @@ export class LanguajeComponent {
   selectLanguaje!: string
   showed!: Boolean
 
+  flags = new Map<string, string>([
+    ['en', 'fi fi-gb'],
+    ['es', 'fi fi-co']
+  ]);
 
   ngOnInit(){
     this.checkLanguaje()
@@ -63,7 +67,8 @@ export class LanguajeComponent {
       lang ??= navigator.language.split('-')[0];
 
       this.selectedLanguage = lang ?? 'en'
-      this.selectedFlag = flag ?? 'fi fi-co'
+
+      this.selectedFlag = flag ?? (this.flags.get(this.selectedLanguage) ?? 'fi fi-gb')
   
       this.translate.use(this.translate.getLangs().includes(this.selectedLanguage) ? this.selectedLanguage : 'en');
     
