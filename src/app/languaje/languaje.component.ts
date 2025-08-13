@@ -59,7 +59,7 @@ export class LanguajeComponent {
       this.showed = false 
       let lang = this.storageService.getItem("language")
       const flag = this.storageService.getItem("flag")
-  
+      console.log(navigator)
       lang ??= navigator.language.split('-')[0];
 
       this.selectedLanguage = lang ?? 'en'
