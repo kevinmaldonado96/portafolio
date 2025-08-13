@@ -6,6 +6,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 export const routes: Routes = [
     { path: '', redirectTo:'/about', pathMatch: 'full' },
@@ -19,6 +21,7 @@ export const routes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forRoot(routes, { enableTracing: false, scrollPositionRestoration: 'enabled' })],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
   })
   export class AppRoutingModule { }
