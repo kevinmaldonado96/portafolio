@@ -29,7 +29,9 @@ export class LanguajeComponent {
 
   constructor(
     private storageService: StorageService,
-    private translate: TranslateService,){
+    private translate: TranslateService){
+      translate.addLangs(['en', 'es']);
+
   }
 
   onDropdownShown() {
@@ -55,17 +57,19 @@ export class LanguajeComponent {
   
     checkLanguaje(){
       this.showed = false 
-      const lang = this.storageService.getItem("language")
+      let lang = this.storageService.getItem("language")
       const flag = this.storageService.getItem("flag")
   
-      this.selectedLanguage = lang ?? 'es'
+      lang ??= navigator.language.split('-')[0];
+
+      this.selectedLanguage = lang ?? 'en'
       this.selectedFlag = flag ?? 'fi fi-co'
   
-      this.translate.use(this.selectedLanguage)
+      this.translate.use(this.translate.getLangs().includes(this.selectedLanguage) ? this.selectedLanguage : 'en');
+    
     }
 
   changeLanguage(lang: string, flag: string) {
-    console.log(lang)
     this.translate.use(lang);
     this.storageService.setItem("language", lang)
     this.storageService.setItem("flag", flag)
