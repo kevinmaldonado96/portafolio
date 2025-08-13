@@ -26,7 +26,7 @@ export class LanguagePipe implements PipeTransform {
 
     this.lang = (this.storageService.getItem("language")) ? this.storageService.getItem("language") : navigator.language.split('-')[0]
 
-    const language = this.lang.startsWith('en') ? 'en' : 'es'; 
+    const language = this.lang.startsWith('es') ? 'es' : 'en'; 
     return languajeArray[language][`${value}`] || `${value}`;   }
 
 }
