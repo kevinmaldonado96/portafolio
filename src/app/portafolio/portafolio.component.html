@@ -140,6 +140,60 @@
           </p>
         </div>
       </div>
+      
+    </div>
+    <div
+      class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card"
+    >
+      <div class="card position-relative" style="width: 18rem">
+        <img
+          src="assets/images/imagen-portafolio-blognest.png"
+          class="card-img-top img-portafolio"
+          alt="blognest"
+        />
+        <div
+          class="overlay d-flex justify-content-center align-items-center"
+          (click)="
+            redirectToUrl(
+              'https://github.com/kevinmaldonado96/BlogNest'
+            )
+          "
+        >
+          <i class="bi bi-eye-fill fs-1" style="color: white"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">BlogNest</h5>
+
+          <p class="card-text justify">
+            {{ 'BLOGNEST_CONTENT' | translate }}            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2%">
+    <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center margin-card">
+      <div class="card position-relative" style="width: 18rem">
+        <img
+          src="assets/images/imagen-portafolio-hiking-shop-app.png"
+          class="card-img-top img-portafolio"
+          alt="hiking-shop-app"
+        />
+        <div
+          class="overlay d-flex justify-content-center align-items-center"
+          (click)="
+            redirectToUrl('https://github.com/kevinmaldonado96/HikingShopApp')
+          "
+        >
+          <i class="bi bi-eye-fill fs-1" style="color: white"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">HikingShopApp</h5>
+          <p class="card-text justify">
+            {{ 'HIKING_SHOP_APP' | translate }}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

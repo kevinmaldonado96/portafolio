@@ -52,5 +52,9 @@
   "ASYNCHRONOUS_FILE_PROCESSOR_TITLE": "Asynchronous File Processor",
   "ANGULAR_INFORMATION_EXPLORER": "An application developed in Angular that allows users to explore and search for information organized in categories. It provides an intuitive and dynamic interface to quickly and efficiently access enriched content.",
   "AI_COMPLAINT_MANAGEMENT": "An application developed in Angular with Angular Material that automates the management of requests, complaints, claims, and suggestions using artificial intelligence. AI prioritizes and categorizes requests, while a ticketing system allows efficient tracking and improvement of response times.",
-  "MICROSERVICES_COMPLAINT_MANAGEMENT": "An application developed in Python, Flask, under a microservices architecture, which automates the management of requests, complaints, claims, and suggestions using artificial intelligence. AI prioritizes and categorizes requests, while a ticketing system allows efficient tracking and improvement of response times."
+  "MICROSERVICES_COMPLAINT_MANAGEMENT": "An application developed in Python, Flask, under a microservices architecture, which automates the management of requests, complaints, claims, and suggestions using artificial intelligence. AI prioritizes and categorizes requests, while a ticketing system allows efficient tracking and improvement of response times.",
+  "BLOGNEST_CONTENT": "BlogNest is a blogging application written in Python and Django that allows you to create and publish content asynchronously using Celery and message queues. Its decoupled architecture improves performance, scalability, and background processing, and includes JWT authentication, user management, and deployment with Docker, applying modern backend best practices.",
+  "HIKING_SHOP_APP": "Hiking Shop Backend is a Java and Spring Boot backend for a hiking store, with JWT security, asynchronous processing with Kafka, and scalable REST architecture. It applies design patterns, validations with Jakarta Validation, and is deployed with Docker and Docker Compose, following modern backend best practices."
+
+
 }
